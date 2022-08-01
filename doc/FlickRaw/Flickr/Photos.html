@@ -1,0 +1,3689 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class FlickRaw::Flickr::Photos - RDoc Documentation</title>
+
+<link href="../../fonts.css" rel="stylesheet">
+<link href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/navigation.js"></script>
+<script src="../../js/search_index.js"></script>
+<script src="../../js/search.js"></script>
+<script src="../../js/searcher.js"></script>
+<script src="../../js/darkfish.js"></script>
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    <div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  
+  <p class="link">FlickRaw::Request
+  
+</div>
+
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-i-addTags">#addTags</a>
+    
+    <li ><a href="#method-i-comments">#comments</a>
+    
+    <li ><a href="#method-i-delete">#delete</a>
+    
+    <li ><a href="#method-i-geo">#geo</a>
+    
+    <li ><a href="#method-i-getAllContexts">#getAllContexts</a>
+    
+    <li ><a href="#method-i-getContactsPhotos">#getContactsPhotos</a>
+    
+    <li ><a href="#method-i-getContactsPublicPhotos">#getContactsPublicPhotos</a>
+    
+    <li ><a href="#method-i-getContext">#getContext</a>
+    
+    <li ><a href="#method-i-getCounts">#getCounts</a>
+    
+    <li ><a href="#method-i-getExif">#getExif</a>
+    
+    <li ><a href="#method-i-getFavorites">#getFavorites</a>
+    
+    <li ><a href="#method-i-getInfo">#getInfo</a>
+    
+    <li ><a href="#method-i-getNotInSet">#getNotInSet</a>
+    
+    <li ><a href="#method-i-getPerms">#getPerms</a>
+    
+    <li ><a href="#method-i-getRecent">#getRecent</a>
+    
+    <li ><a href="#method-i-getSizes">#getSizes</a>
+    
+    <li ><a href="#method-i-getUntagged">#getUntagged</a>
+    
+    <li ><a href="#method-i-getWithGeoData">#getWithGeoData</a>
+    
+    <li ><a href="#method-i-getWithoutGeoData">#getWithoutGeoData</a>
+    
+    <li ><a href="#method-i-licenses">#licenses</a>
+    
+    <li ><a href="#method-i-notes">#notes</a>
+    
+    <li ><a href="#method-i-people">#people</a>
+    
+    <li ><a href="#method-i-recentlyUpdated">#recentlyUpdated</a>
+    
+    <li ><a href="#method-i-removeTag">#removeTag</a>
+    
+    <li ><a href="#method-i-search">#search</a>
+    
+    <li ><a href="#method-i-setContentType">#setContentType</a>
+    
+    <li ><a href="#method-i-setDates">#setDates</a>
+    
+    <li ><a href="#method-i-setMeta">#setMeta</a>
+    
+    <li ><a href="#method-i-setPerms">#setPerms</a>
+    
+    <li ><a href="#method-i-setSafetyLevel">#setSafetyLevel</a>
+    
+    <li ><a href="#method-i-setTags">#setTags</a>
+    
+    <li ><a href="#method-i-suggestions">#suggestions</a>
+    
+    <li ><a href="#method-i-transform">#transform</a>
+    
+    <li ><a href="#method-i-upload">#upload</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-FlickRaw::Flickr::Photos">
+  <h1 id="class-FlickRaw::Flickr::Photos" class="class">
+    class FlickRaw::Flickr::Photos
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+    
+      <div id="method-i-addTags" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">addTags</span><span
+            class="method-args">(:photo_id => 'photo_id',:tags => 'tags')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.addTags.html">flickr.photos.addTags</a>
+request.</p>
+
+<p>Add tags to a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to add tags to.</p>
+</dd><dt>tags <em>(required)</em> 
+<dd>
+<p>The tags to add to the photo.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not the id of a photo that the calling user can add
+tags to. It could be an invalid id, or the user may not have permission to
+add tags to it.</p>
+</li><li>
+<p>2: <em>Maximum number of tags reached</em></p>
+
+<p>The maximum number of tags for the photo has been reached - no more tags
+can be added. If the current count is less than the maximum, but adding all
+of the tags for this request would go over the limit, the whole request is
+ignored. I.E. when you get this message, none of the requested tags have
+been added.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="addTags-source">
+            <pre>
+# Generated automatically from flickr api
+  def addTags(*args)
+    @flickr.call &#39;flickr.photos.addTags&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-comments" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">comments</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/Comments.html">Comments</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-delete" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete</span><span
+            class="method-args">(:photo_id => 'photo_id')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.delete.html">flickr.photos.delete</a>
+request.</p>
+
+<p>Delete a photo from flickr.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to delete.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id was not the id of a photo belonging to the calling user.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="delete-source">
+            <pre>
+# Generated automatically from flickr api
+  def delete(*args)
+    @flickr.call &#39;flickr.photos.delete&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-geo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">geo</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/Geo.html">Geo</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getAllContexts" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getAllContexts</span><span
+            class="method-args">(:photo_id => 'photo_id')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getAllContexts.html">flickr.photos.getAllContexts</a>
+request.</p>
+
+<p>Returns all visible sets and pools the photo belongs to.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The photo to return information for.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not the id of a valid photo.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getAllContexts-source">
+            <pre>
+# Generated automatically from flickr api
+  def getAllContexts(*args)
+    @flickr.call &#39;flickr.photos.getAllContexts&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getContactsPhotos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getContactsPhotos</span><span
+            class="method-args">(:count => 'count',:just_friends => 'just_friends',:single_photo => 'single_photo',:include_self => 'include_self',:extras => 'extras')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getContactsPhotos.html">flickr.photos.getContactsPhotos</a>
+request.</p>
+
+<p>Fetch a list of recent photos from the calling users&#39; contacts.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>count 
+<dd>
+<p>Number of photos to return. Defaults to 10, maximum 50. This is only used
+if single_photo is not passed.</p>
+</dd><dt>just_friends 
+<dd>
+<p>set as 1 to only show photos from friends and family (excluding regular
+contacts).</p>
+</dd><dt>single_photo 
+<dd>
+<p>Only fetch one photo (the latest) per contact, instead of all photos in
+chronological order.</p>
+</dd><dt>include_self 
+<dd>
+<p>Set to 1 to include photos from the calling user.</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields include: license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update. For more
+information see extras under flickr.photos.search.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getContactsPhotos-source">
+            <pre>
+# Generated automatically from flickr api
+  def getContactsPhotos(*args)
+    @flickr.call &#39;flickr.photos.getContactsPhotos&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getContactsPublicPhotos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getContactsPublicPhotos</span><span
+            class="method-args">(:user_id => 'user_id',:count => 'count',:just_friends => 'just_friends',:single_photo => 'single_photo',:include_self => 'include_self',:extras => 'extras')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getContactsPublicPhotos.html">flickr.photos.getContactsPublicPhotos</a>
+request.</p>
+
+<p>Fetch a list of recent public photos from a users&#39; contacts.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>user_id <em>(required)</em> 
+<dd>
+<p>The NSID of the user to fetch photos for.</p>
+</dd><dt>count 
+<dd>
+<p>Number of photos to return. Defaults to 10, maximum 50. This is only used
+if single_photo is not passed.</p>
+</dd><dt>just_friends 
+<dd>
+<p>set as 1 to only show photos from friends and family (excluding regular
+contacts).</p>
+</dd><dt>single_photo 
+<dd>
+<p>Only fetch one photo (the latest) per contact, instead of all photos in
+chronological order.</p>
+</dd><dt>include_self 
+<dd>
+<p>Set to 1 to include photos from the user specified by user_id.</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: license, date_upload, date_taken,
+owner_name, icon_server, original_format, last_update.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>User not found</em></p>
+
+<p>The user NSID passed was not a valid user NSID.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getContactsPublicPhotos-source">
+            <pre>
+# Generated automatically from flickr api
+  def getContactsPublicPhotos(*args)
+    @flickr.call &#39;flickr.photos.getContactsPublicPhotos&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getContext" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getContext</span><span
+            class="method-args">(:photo_id => 'photo_id',:num_prev => 'num_prev',:num_next => 'num_next',:extras => 'extras',:order_by => 'order_by',:view_as => 'view_as')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getContext.html">flickr.photos.getContext</a>
+request.</p>
+
+<p>Returns next and previous photos for a photo in a photostream.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to fetch the context for.</p>
+</dd><dt>num_prev 
+<dt>num_next 
+<dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_m, url_z, url_l, url_o</p>
+</dd><dt>order_by 
+<dd>
+<p>Accepts datetaken or dateposted and returns results in the proper order.</p>
+</dd><dt>view_as 
+<dd>
+<p>Can take values public to indicate that the profile has to be viewed as
+public and returns context only in public setting</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not a valid photo id, or was the id of a photo that
+the calling user does not have permission to view.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getContext-source">
+            <pre>
+# Generated automatically from flickr api
+  def getContext(*args)
+    @flickr.call &#39;flickr.photos.getContext&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getCounts" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getCounts</span><span
+            class="method-args">(:dates => 'dates',:taken_dates => 'taken_dates')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getCounts.html">flickr.photos.getCounts</a>
+request.</p>
+
+<p>Gets a list of photo counts for the given date ranges for the calling user.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>dates 
+<dd>
+<p>A comma delimited list of unix timestamps, denoting the periods to return
+counts for. They should be specified smallest first.</p>
+</dd><dt>taken_dates 
+<dd>
+<p>A comma delimited list of mysql datetimes, denoting the periods to return
+counts for. They should be specified smallest first.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>No dates specified</em></p>
+
+<p>Neither dates nor taken_dates were specified.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getCounts-source">
+            <pre>
+# Generated automatically from flickr api
+  def getCounts(*args)
+    @flickr.call &#39;flickr.photos.getCounts&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getExif" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getExif</span><span
+            class="method-args">(:photo_id => 'photo_id',:secret => 'secret',:extras => 'extras')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getExif.html">flickr.photos.getExif</a>
+request.</p>
+
+<p>Retrieves a list of EXIF/TIFF/GPS tags for a given photo. The calling user
+must have permission to view the photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to fetch information for.</p>
+</dd><dt>secret 
+<dd>
+<p>The secret for the photo. If the correct secret is passed then permissions
+checking is skipped. This enables the &#39;sharing&#39; of individual
+photos by passing around the id and secret.</p>
+</dd><dt>extras 
+<dd>
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id was either invalid or was for a photo not viewable by the
+calling user.</p>
+</li><li>
+<p>2: <em>Permission denied</em></p>
+
+<p>The owner of the photo does not want to share EXIF data.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+
+<pre>Canon90/10f/964/1, 42/1, 4414/10064° 42&#39; 44.14&quot;</pre>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="getExif-source">
+            <pre>
+# Generated automatically from flickr api
+  def getExif(*args)
+    @flickr.call &#39;flickr.photos.getExif&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getFavorites" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getFavorites</span><span
+            class="method-args">(:photo_id => 'photo_id',:page => 'page',:per_page => 'per_page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getFavorites.html">flickr.photos.getFavorites</a>
+request.</p>
+
+<p>Returns the list of people who have favorited a given photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The ID of the photo to fetch the favoriters list for.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of usres to return per page. If this argument is omitted, it
+defaults to 10. The maximum allowed value is 50.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The specified photo does not exist, or the calling user does not have
+permission to view it.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getFavorites-source">
+            <pre>
+# Generated automatically from flickr api
+  def getFavorites(*args)
+    @flickr.call &#39;flickr.photos.getFavorites&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getInfo" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getInfo</span><span
+            class="method-args">(:photo_id => 'photo_id',:secret => 'secret',:humandates => 'humandates',:privacy_filter => 'privacy_filter',:get_contexts => 'get_contexts',:get_geofences => 'get_geofences',:datecreate => 'datecreate',:extras => 'extras')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getInfo.html">flickr.photos.getInfo</a>
+request.</p>
+
+<p>Get information about a photo. The calling user must have permission to
+view the photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to get information for.</p>
+</dd><dt>secret 
+<dd>
+<p>The secret for the photo. If the correct secret is passed then permissions
+checking is skipped. This enables the &#39;sharing&#39; of individual
+photos by passing around the id and secret.</p>
+</dd><dt>humandates 
+<dt>privacy_filter 
+<dt>get_contexts 
+<dt>get_geofences 
+<dd>
+<p>Return geofence information in the photo&#39;s location property</p>
+</dd><dt>datecreate 
+<dd>
+<p>If set to 1, it returns the timestamp of the user&#39;s account creation,
+in MySQL DATETIME format.</p>
+</dd><dt>extras 
+<dd>
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found.</em></p>
+
+<p>The photo id was either invalid or was for a photo not viewable by the
+calling user.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+
+<pre>orford_castle_tasterhello!1foowooyayhooplahttp://www.flickr.com/photos/bees/2733/</pre>
+</dd></dl>
+          
+          
+
+          
+          <div class="method-source-code" id="getInfo-source">
+            <pre>
+# Generated automatically from flickr api
+  def getInfo(*args)
+    @flickr.call &#39;flickr.photos.getInfo&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getNotInSet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getNotInSet</span><span
+            class="method-args">(:max_upload_date => 'max_upload_date',:min_taken_date => 'min_taken_date',:max_taken_date => 'max_taken_date',:privacy_filter => 'privacy_filter',:media => 'media',:min_upload_date => 'min_upload_date',:extras => 'extras',:per_page => 'per_page',:page => 'page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getNotInSet.html">flickr.photos.getNotInSet</a>
+request.</p>
+
+<p>Returns a list of your photos that are not part of any sets.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>max_upload_date 
+<dd>
+<p>Maximum upload date. <a href="Photos.html">Photos</a> with an upload date
+less than or equal to this value will be returned. The date can be in the
+form of a unix timestamp or mysql datetime.</p>
+</dd><dt>min_taken_date 
+<dd>
+<p>Minimum taken date. <a href="Photos.html">Photos</a> with an taken date
+greater than or equal to this value will be returned. The date can be in
+the form of a mysql datetime or unix timestamp.</p>
+</dd><dt>max_taken_date 
+<dd>
+<p>Maximum taken date. <a href="Photos.html">Photos</a> with an taken date
+less than or equal to this value will be returned. The date can be in the
+form of a mysql datetime or unix timestamp.</p>
+</dd><dt>privacy_filter 
+<dd>
+<p>Return photos only matching a certain privacy level. Valid values are:</p>
+</dd></dl>
+
+<p>1 public photos 2 private photos visible to friends 3 private photos
+visible to family 4 private photos visible to friends &amp; family 5
+completely private photos</p>
+<dl class="rdoc-list label-list"><dt>media 
+<dd>
+<p>Filter results by media type. Possible values are all (default), photos or
+videos</p>
+</dd><dt>min_upload_date 
+<dd>
+<p>Minimum upload date. <a href="Photos.html">Photos</a> with an upload date
+greater than or equal to this value will be returned. The date can be in
+the form of a unix timestamp or mysql datetime.</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_q, url_m, url_n, url_z, url_c, url_l, url_o</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of photos to return per page. If this argument is omitted, it
+defaults to 100. The maximum allowed value is 500.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="getNotInSet-source">
+            <pre>
+# Generated automatically from flickr api
+  def getNotInSet(*args)
+    @flickr.call &#39;flickr.photos.getNotInSet&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getPerms" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getPerms</span><span
+            class="method-args">(:photo_id => 'photo_id')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getPerms.html">flickr.photos.getPerms</a>
+request.</p>
+
+<p>Get permissions for a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to get permissions for.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not a valid photo id of a photo belonging to the
+calling user.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getPerms-source">
+            <pre>
+# Generated automatically from flickr api
+  def getPerms(*args)
+    @flickr.call &#39;flickr.photos.getPerms&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getRecent" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getRecent</span><span
+            class="method-args">(:jump_to => 'jump_to',:extras => 'extras',:per_page => 'per_page',:page => 'page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getRecent.html">flickr.photos.getRecent</a>
+request.</p>
+
+<p>Returns a list of the latest public photos uploaded to flickr.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>jump_to 
+<dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_q, url_m, url_n, url_z, url_c, url_l, url_o</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of photos to return per page. If this argument is omitted, it
+defaults to 100. The maximum allowed value is 500.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>bad value for jump_to, must be valid photo id.</em></p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="getRecent-source">
+            <pre>
+# Generated automatically from flickr api
+  def getRecent(*args)
+    @flickr.call &#39;flickr.photos.getRecent&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getSizes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getSizes</span><span
+            class="method-args">(:photo_id => 'photo_id')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getSizes.html">flickr.photos.getSizes</a>
+request.</p>
+
+<p>Returns the available sizes for a photo.  The calling user must have
+permission to view the photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to fetch size information for.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not a valid photo id.</p>
+</li><li>
+<p>2: <em>Permission denied</em></p>
+
+<p>The calling user does not have permission to view the photo.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="getSizes-source">
+            <pre>
+# Generated automatically from flickr api
+  def getSizes(*args)
+    @flickr.call &#39;flickr.photos.getSizes&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getUntagged" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getUntagged</span><span
+            class="method-args">(:min_upload_date => 'min_upload_date',:max_upload_date => 'max_upload_date',:min_taken_date => 'min_taken_date',:max_taken_date => 'max_taken_date',:privacy_filter => 'privacy_filter',:media => 'media',:extras => 'extras',:per_page => 'per_page',:page => 'page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getUntagged.html">flickr.photos.getUntagged</a>
+request.</p>
+
+<p>Returns a list of your photos with no tags.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>min_upload_date 
+<dd>
+<p>Minimum upload date. <a href="Photos.html">Photos</a> with an upload date
+greater than or equal to this value will be returned. The date can be in
+the form of a unix timestamp or mysql datetime.</p>
+</dd><dt>max_upload_date 
+<dd>
+<p>Maximum upload date. <a href="Photos.html">Photos</a> with an upload date
+less than or equal to this value will be returned. The date can be in the
+form of a unix timestamp or mysql datetime.</p>
+</dd><dt>min_taken_date 
+<dd>
+<p>Minimum taken date. <a href="Photos.html">Photos</a> with an taken date
+greater than or equal to this value will be returned. The date should be in
+the form of a mysql datetime or unix timestamp.</p>
+</dd><dt>max_taken_date 
+<dd>
+<p>Maximum taken date. <a href="Photos.html">Photos</a> with an taken date
+less than or equal to this value will be returned. The date can be in the
+form of a mysql datetime or unix timestamp.</p>
+</dd><dt>privacy_filter 
+<dd>
+<p>Return photos only matching a certain privacy level. Valid values are:</p>
+</dd></dl>
+
+<p>1 public photos 2 private photos visible to friends 3 private photos
+visible to family 4 private photos visible to friends &amp; family 5
+completely private photos</p>
+<dl class="rdoc-list label-list"><dt>media 
+<dd>
+<p>Filter results by media type. Possible values are all (default), photos or
+videos</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_q, url_m, url_n, url_z, url_c, url_l, url_o</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of photos to return per page. If this argument is omitted, it
+defaults to 100. The maximum allowed value is 500.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="getUntagged-source">
+            <pre>
+# Generated automatically from flickr api
+  def getUntagged(*args)
+    @flickr.call &#39;flickr.photos.getUntagged&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getWithGeoData" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getWithGeoData</span><span
+            class="method-args">(:min_upload_date => 'min_upload_date',:max_upload_date => 'max_upload_date',:min_taken_date => 'min_taken_date',:max_taken_date => 'max_taken_date',:privacy_filter => 'privacy_filter',:sort => 'sort',:media => 'media',:extras => 'extras',:per_page => 'per_page',:page => 'page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getWithGeoData.html">flickr.photos.getWithGeoData</a>
+request.</p>
+
+<p>Returns a list of your geo-tagged photos.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>min_upload_date 
+<dd>
+<p>Minimum upload date. <a href="Photos.html">Photos</a> with an upload date
+greater than or equal to this value will be returned. The date should be in
+the form of a unix timestamp.</p>
+</dd><dt>max_upload_date 
+<dd>
+<p>Maximum upload date. <a href="Photos.html">Photos</a> with an upload date
+less than or equal to this value will be returned. The date should be in
+the form of a unix timestamp.</p>
+</dd><dt>min_taken_date 
+<dd>
+<p>Minimum taken date. <a href="Photos.html">Photos</a> with an taken date
+greater than or equal to this value will be returned. The date should be in
+the form of a mysql datetime.</p>
+</dd><dt>max_taken_date 
+<dd>
+<p>Maximum taken date. <a href="Photos.html">Photos</a> with an taken date
+less than or equal to this value will be returned. The date should be in
+the form of a mysql datetime.</p>
+</dd><dt>privacy_filter 
+<dd>
+<p>Return photos only matching a certain privacy level. Valid values are:</p>
+</dd></dl>
+
+<p>1 public photos 2 private photos visible to friends 3 private photos
+visible to family 4 private photos visible to friends &amp; family 5
+completely private photos</p>
+<dl class="rdoc-list label-list"><dt>sort 
+<dd>
+<p>The order in which to sort returned photos. Deafults to date-posted-desc.
+The possible values are: date-posted-asc, date-posted-desc, date-taken-asc,
+date-taken-desc, interestingness-desc, and interestingness-asc.</p>
+</dd><dt>media 
+<dd>
+<p>Filter results by media type. Possible values are all (default), photos or
+videos</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_q, url_m, url_n, url_z, url_c, url_l, url_o</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of photos to return per page. If this argument is omitted, it
+defaults to 100. The maximum allowed value is 500.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="getWithGeoData-source">
+            <pre>
+# Generated automatically from flickr api
+  def getWithGeoData(*args)
+    @flickr.call &#39;flickr.photos.getWithGeoData&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-getWithoutGeoData" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getWithoutGeoData</span><span
+            class="method-args">(:max_upload_date => 'max_upload_date',:min_taken_date => 'min_taken_date',:max_taken_date => 'max_taken_date',:privacy_filter => 'privacy_filter',:sort => 'sort',:media => 'media',:min_upload_date => 'min_upload_date',:extras => 'extras',:per_page => 'per_page',:page => 'page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.getWithoutGeoData.html">flickr.photos.getWithoutGeoData</a>
+request.</p>
+
+<p>Returns a list of your photos which haven&#39;t been geo-tagged.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>max_upload_date 
+<dd>
+<p>Maximum upload date. <a href="Photos.html">Photos</a> with an upload date
+less than or equal to this value will be returned. The date should be in
+the form of a unix timestamp.</p>
+</dd><dt>min_taken_date 
+<dd>
+<p>Minimum taken date. <a href="Photos.html">Photos</a> with an taken date
+greater than or equal to this value will be returned. The date can be in
+the form of a mysql datetime or unix timestamp.</p>
+</dd><dt>max_taken_date 
+<dd>
+<p>Maximum taken date. <a href="Photos.html">Photos</a> with an taken date
+less than or equal to this value will be returned. The date can be in the
+form of a mysql datetime or unix timestamp.</p>
+</dd><dt>privacy_filter 
+<dd>
+<p>Return photos only matching a certain privacy level. Valid values are:</p>
+</dd></dl>
+
+<p>1 public photos 2 private photos visible to friends 3 private photos
+visible to family 4 private photos visible to friends &amp; family 5
+completely private photos</p>
+<dl class="rdoc-list label-list"><dt>sort 
+<dd>
+<p>The order in which to sort returned photos. Deafults to date-posted-desc.
+The possible values are: date-posted-asc, date-posted-desc, date-taken-asc,
+date-taken-desc, interestingness-desc, and interestingness-asc.</p>
+</dd><dt>media 
+<dd>
+<p>Filter results by media type. Possible values are all (default), photos or
+videos</p>
+</dd><dt>min_upload_date 
+<dd>
+<p>Minimum upload date. <a href="Photos.html">Photos</a> with an upload date
+greater than or equal to this value will be returned. The date can be in
+the form of a unix timestamp or mysql datetime.</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_q, url_m, url_n, url_z, url_c, url_l, url_o</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of photos to return per page. If this argument is omitted, it
+defaults to 100. The maximum allowed value is 500.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="getWithoutGeoData-source">
+            <pre>
+# Generated automatically from flickr api
+  def getWithoutGeoData(*args)
+    @flickr.call &#39;flickr.photos.getWithoutGeoData&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-licenses" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">licenses</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/Licenses.html">Licenses</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-notes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">notes</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/Notes.html">Notes</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-people" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">people</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/People.html">People</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-recentlyUpdated" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">recentlyUpdated</span><span
+            class="method-args">(:min_date => 'min_date',:extras => 'extras',:per_page => 'per_page',:page => 'page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.recentlyUpdated.html">flickr.photos.recentlyUpdated</a>
+request.</p>
+
+<p>Return a list of your photos that have been recently created or which have
+been recently modified.</p>
+
+<p>Recently modified may mean that the photo&#39;s metadata (title,
+description, tags) may have been changed or a comment has been added (or
+just modified somehow :-)</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>min_date <em>(required)</em> 
+<dd>
+<p>A Unix timestamp or any English textual datetime description indicating the
+date from which modifications should be compared.</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_q, url_m, url_n, url_z, url_c, url_l, url_o</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of photos to return per page. If this argument is omitted, it
+defaults to 100. The maximum allowed value is 500.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Required argument missing.</em></p>
+
+<p>Some or all of the required arguments were not supplied.</p>
+</li><li>
+<p>2: <em>Not a valid date</em></p>
+
+<p>The date argument did not pass validation.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="recentlyUpdated-source">
+            <pre>
+# Generated automatically from flickr api
+  def recentlyUpdated(*args)
+    @flickr.call &#39;flickr.photos.recentlyUpdated&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-removeTag" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">removeTag</span><span
+            class="method-args">(:tag_id => 'tag_id')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.removeTag.html">flickr.photos.removeTag</a>
+request.</p>
+
+<p>Remove a tag from a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>tag_id <em>(required)</em> 
+<dd>
+<p>The tag to remove from the photo. This parameter should contain a tag id,
+as returned by flickr.photos.getInfo.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Tag not found</em></p>
+
+<p>The calling user doesn&#39;t have permission to delete the specified tag.
+This could mean it belongs to someone else, or doesn&#39;t exist.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="removeTag-source">
+            <pre>
+# Generated automatically from flickr api
+  def removeTag(*args)
+    @flickr.call &#39;flickr.photos.removeTag&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-search" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">search</span><span
+            class="method-args">(:user_id => 'user_id',:tags => 'tags',:tag_mode => 'tag_mode',:text => 'text',:min_upload_date => 'min_upload_date',:max_upload_date => 'max_upload_date',:min_taken_date => 'min_taken_date',:max_taken_date => 'max_taken_date',:license => 'license',:sort => 'sort',:privacy_filter => 'privacy_filter',:bbox => 'bbox',:accuracy => 'accuracy',:safe_search => 'safe_search',:content_type => 'content_type',:machine_tags => 'machine_tags',:machine_tag_mode => 'machine_tag_mode',:group_id => 'group_id',:faves => 'faves',:camera => 'camera',:jump_to => 'jump_to',:contacts => 'contacts',:woe_id => 'woe_id',:place_id => 'place_id',:media => 'media',:has_geo => 'has_geo',:geo_context => 'geo_context',:lat => 'lat',:lon => 'lon',:radius => 'radius',:radius_units => 'radius_units',:is_commons => 'is_commons',:in_gallery => 'in_gallery',:person_id => 'person_id',:is_getty => 'is_getty',:username => 'username',:exif_min_exposure => 'exif_min_exposure',:exif_max_exposure => 'exif_max_exposure',:exif_min_aperture => 'exif_min_aperture',:exif_max_aperture => 'exif_max_aperture',:exif_min_focallen => 'exif_min_focallen',:exif_max_focallen => 'exif_max_focallen',:exclude_user_id => 'exclude_user_id',:extras => 'extras',:per_page => 'per_page',:page => 'page')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.search.html">flickr.photos.search</a>
+request.</p>
+
+<p>Return a list of photos matching some criteria. Only photos visible to the
+calling user will be returned. To return private or semi-private photos,
+the caller must be authenticated with &#39;read&#39; permissions, and have
+permission to view the photos. Unauthenticated calls will only return
+public photos.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>user_id 
+<dd>
+<p>The NSID of the user who&#39;s photo to search. If this parameter isn&#39;t
+passed then everybody&#39;s public photos will be searched. A value of “me”
+will search against the calling user&#39;s photos for authenticated calls.</p>
+</dd><dt>tags 
+<dd>
+<p>A comma-delimited list of tags. <a href="Photos.html">Photos</a> with one
+or more of the tags listed will be returned. You can exclude results that
+match a term by prepending it with a - character.</p>
+</dd><dt>tag_mode 
+<dd>
+<p>Either &#39;any&#39; for an OR combination of tags, or &#39;all&#39; for an
+AND combination. Defaults to &#39;any&#39; if not specified.</p>
+</dd><dt>text 
+<dd>
+<p>A free text search. <a href="Photos.html">Photos</a> who&#39;s title,
+description or tags contain the text will be returned. You can exclude
+results that match a term by prepending it with a - character.</p>
+</dd><dt>min_upload_date 
+<dd>
+<p>Minimum upload date. <a href="Photos.html">Photos</a> with an upload date
+greater than or equal to this value will be returned. The date can be in
+the form of a unix timestamp or mysql datetime.</p>
+</dd><dt>max_upload_date 
+<dd>
+<p>Maximum upload date. <a href="Photos.html">Photos</a> with an upload date
+less than or equal to this value will be returned. The date can be in the
+form of a unix timestamp or mysql datetime.</p>
+</dd><dt>min_taken_date 
+<dd>
+<p>Minimum taken date. <a href="Photos.html">Photos</a> with an taken date
+greater than or equal to this value will be returned. The date can be in
+the form of a mysql datetime or unix timestamp.</p>
+</dd><dt>max_taken_date 
+<dd>
+<p>Maximum taken date. <a href="Photos.html">Photos</a> with an taken date
+less than or equal to this value will be returned. The date can be in the
+form of a mysql datetime or unix timestamp.</p>
+</dd><dt>license 
+<dd>
+<p>The license id for photos (for possible values see the
+flickr.photos.licenses.getInfo method). Multiple licenses may be
+comma-separated.</p>
+</dd><dt>sort 
+<dd>
+<p>The order in which to sort returned photos. Deafults to date-posted-desc
+(unless you are doing a radial geo query, in which case the default sorting
+is by ascending distance from the point specified). The possible values
+are: date-posted-asc, date-posted-desc, date-taken-asc, date-taken-desc,
+interestingness-desc, interestingness-asc, and relevance.</p>
+</dd><dt>privacy_filter 
+<dd>
+<p>Return photos only matching a certain privacy level. This only applies when
+making an authenticated call to view photos you own. Valid values are:</p>
+</dd></dl>
+
+<p>1 public photos 2 private photos visible to friends 3 private photos
+visible to family 4 private photos visible to friends &amp; family 5
+completely private photos</p>
+<dl class="rdoc-list label-list"><dt>bbox 
+<dd>
+<p>A comma-delimited list of 4 values defining the Bounding Box of the area
+that will be searched.</p>
+</dd></dl>
+
+<p>The 4 values represent the bottom-left corner of the box and the top-right
+corner, minimum_longitude, minimum_latitude, maximum_longitude,
+maximum_latitude.</p>
+
+<p>Longitude has a range of -180 to 180 , latitude of -90 to 90. Defaults to
+-180, -90, 180, 90 if not specified.</p>
+
+<p>Unlike standard photo queries, geo (or bounding box) queries will only
+return 250 results per page.</p>
+
+<p><a href="Photos/Geo.html">Geo</a> queries require some sort of limiting
+agent in order to prevent the database from crying. This is basically like
+the check against “parameterless searches” for queries without a geo
+component.</p>
+
+<p>A tag, for instance, is considered a limiting agent as are user defined
+min_date_taken and min_date_upload parameters — If no limiting factor is
+passed we return only photos added in the last 12 hours (though we may
+extend the limit in the future).</p>
+<dl class="rdoc-list label-list"><dt>accuracy 
+<dd>
+<p>Recorded accuracy level of the location information.  Current range is 1-16
+:</p>
+</dd></dl>
+
+<p>World level is 1 Country is ~3 Region is ~6 City is ~11 Street is ~16</p>
+
+<p>Defaults to maximum value if not specified.</p>
+<dl class="rdoc-list label-list"><dt>safe_search 
+<dd>
+<p>Safe search setting:</p>
+</dd></dl>
+
+<p>1 for safe. 2 for moderate. 3 for restricted.</p>
+
+<p>(Please note: Un-authed calls can only see Safe content.)</p>
+<dl class="rdoc-list label-list"><dt>content_type 
+<dd>
+<p>Content Type setting:</p>
+</dd></dl>
+
+<p>1 for photos only. 2 for screenshots only. 3 for &#39;other&#39; only. 4
+for photos and screenshots. 5 for screenshots and &#39;other&#39;. 6 for
+photos and &#39;other&#39;. 7 for photos, screenshots, and &#39;other&#39;
+(all).</p>
+<dl class="rdoc-list label-list"><dt>machine_tags 
+<dd>
+<p>Aside from passing in a fully formed machine tag, there is a special syntax
+for searching on specific properties :</p>
+</dd></dl>
+
+<p>Find photos using the &#39;dc&#39; namespace :    “machine_tags” =&gt;
+“dc:”</p>
+
+<pre class="ruby"> <span class="ruby-constant">Find</span> <span class="ruby-identifier">photos</span> <span class="ruby-identifier">with</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">title</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">the</span> <span class="ruby-string">&#39;dc&#39;</span> <span class="ruby-identifier">namespace</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;machine_tags&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;dc:title=&quot;</span>
+<span class="ruby-constant">Find</span> <span class="ruby-identifier">photos</span> <span class="ruby-identifier">titled</span> <span class="ruby-string">&quot;mr. camera&quot;</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">the</span> <span class="ruby-string">&#39;dc&#39;</span> <span class="ruby-identifier">namespace</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;machine_tags&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;dc:title=\&quot;mr. camera\&quot;
+Find photos whose value is &quot;</span><span class="ruby-identifier">mr</span>. <span class="ruby-identifier">camera</span><span class="ruby-string">&quot; : &quot;</span><span class="ruby-identifier">machine_tags</span><span class="ruby-string">&quot; =&gt; &quot;</span><span class="ruby-operator">*</span>:<span class="ruby-operator">*=</span>\<span class="ruby-string">&quot;mr. camera\&quot;&quot;</span>
+<span class="ruby-constant">Find</span> <span class="ruby-identifier">photos</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">have</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">title</span>, <span class="ruby-keyword">in</span> <span class="ruby-identifier">any</span> <span class="ruby-identifier">namespace</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;machine_tags&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;*:title=&quot;</span>
+<span class="ruby-constant">Find</span> <span class="ruby-identifier">photos</span> <span class="ruby-identifier">that</span> <span class="ruby-identifier">have</span> <span class="ruby-identifier">a</span> <span class="ruby-identifier">title</span>, <span class="ruby-keyword">in</span> <span class="ruby-identifier">any</span> <span class="ruby-identifier">namespace</span>, <span class="ruby-identifier">whose</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">is</span> <span class="ruby-string">&quot;mr. camera&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;machine_tags&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;*:title=\&quot;mr. camera\&quot;&quot;</span>
+<span class="ruby-constant">Find</span> <span class="ruby-identifier">photos</span>, <span class="ruby-keyword">in</span> <span class="ruby-identifier">the</span> <span class="ruby-string">&#39;dc&#39;</span> <span class="ruby-identifier">namespace</span> <span class="ruby-identifier">whose</span> <span class="ruby-identifier">value</span> <span class="ruby-identifier">is</span> <span class="ruby-string">&quot;mr. camera&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-string">&quot;machine_tags&quot;</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;dc:*=\&quot;mr. camera\&quot;&quot;</span>
+</pre>
+
+<p>Multiple machine tags may be queried by passing a comma-separated list. The
+number of machine tags you can pass in a single query depends on the tag
+mode (AND or OR) that you are querying with. “AND” queries are limited to
+(16) machine tags. “OR” queries are limited to (8).</p>
+<dl class="rdoc-list label-list"><dt>machine_tag_mode 
+<dd>
+<p>Either &#39;any&#39; for an OR combination of tags, or &#39;all&#39; for an
+AND combination. Defaults to &#39;any&#39; if not specified.</p>
+</dd><dt>group_id 
+<dd>
+<p>The id of a group who&#39;s pool to search.  If specified, only matching
+photos posted to the group&#39;s pool will be returned.</p>
+</dd><dt>faves 
+<dd>
+<p>boolean. Pass faves=1 along with your user_id to search within your
+favorites</p>
+</dd><dt>camera 
+<dd>
+<p>Limit results by camera.  Camera names must be in the Camera Finder
+normalized form.  flickr.cameras.getList() returns a list of searchable
+cameras.</p>
+</dd><dt>jump_to 
+<dd>
+<p>Jump, jump!</p>
+</dd><dt>contacts 
+<dd>
+<p>Search your contacts. Either &#39;all&#39; or &#39;ff&#39; for just friends
+and family. (Experimental)</p>
+</dd><dt>woe_id 
+<dd>
+<p>A 32-bit identifier that uniquely represents spatial entities. (not used if
+bbox argument is present).</p>
+</dd></dl>
+
+<p><a href="Photos/Geo.html">Geo</a> queries require some sort of limiting
+agent in order to prevent the database from crying. This is basically like
+the check against “parameterless searches” for queries without a geo
+component.</p>
+
+<p>A tag, for instance, is considered a limiting agent as are user defined
+min_date_taken and min_date_upload parameters — If no limiting factor is
+passed we return only photos added in the last 12 hours (though we may
+extend the limit in the future).</p>
+<dl class="rdoc-list label-list"><dt>place_id 
+<dd>
+<p>A <a href="../Flickr.html">Flickr</a> place id.  (not used if bbox argument
+is present).</p>
+</dd></dl>
+
+<p><a href="Photos/Geo.html">Geo</a> queries require some sort of limiting
+agent in order to prevent the database from crying. This is basically like
+the check against “parameterless searches” for queries without a geo
+component.</p>
+
+<p>A tag, for instance, is considered a limiting agent as are user defined
+min_date_taken and min_date_upload parameters — If no limiting factor is
+passed we return only photos added in the last 12 hours (though we may
+extend the limit in the future).</p>
+<dl class="rdoc-list label-list"><dt>media 
+<dd>
+<p>Filter results by media type. Possible values are all (default), photos or
+videos</p>
+</dd><dt>has_geo 
+<dd>
+<p>Any photo that has been geotagged, or if the value is “0” any photo that
+has not been geotagged.</p>
+</dd></dl>
+
+<p><a href="Photos/Geo.html">Geo</a> queries require some sort of limiting
+agent in order to prevent the database from crying. This is basically like
+the check against “parameterless searches” for queries without a geo
+component.</p>
+
+<p>A tag, for instance, is considered a limiting agent as are user defined
+min_date_taken and min_date_upload parameters — If no limiting factor is
+passed we return only photos added in the last 12 hours (though we may
+extend the limit in the future).</p>
+<dl class="rdoc-list label-list"><dt>geo_context 
+<dd>
+<p><a href="Photos/Geo.html">Geo</a> context is a numeric value representing
+the photo&#39;s geotagginess beyond latitude and longitude. For example,
+you may wish to search for photos that were taken “indoors” or “outdoors”.</p>
+</dd></dl>
+
+<p>The current list of context IDs is :0, not defined. 1, indoors. 2,
+outdoors.</p>
+
+<p><a href="Photos/Geo.html">Geo</a> queries require some sort of limiting
+agent in order to prevent the database from crying. This is basically like
+the check against “parameterless searches” for queries without a geo
+component.</p>
+
+<p>A tag, for instance, is considered a limiting agent as are user defined
+min_date_taken and min_date_upload parameters — If no limiting factor is
+passed we return only photos added in the last 12 hours (though we may
+extend the limit in the future).</p>
+<dl class="rdoc-list label-list"><dt>lat 
+<dd>
+<p>A valid latitude, in decimal format, for doing radial geo queries.</p>
+</dd></dl>
+
+<p><a href="Photos/Geo.html">Geo</a> queries require some sort of limiting
+agent in order to prevent the database from crying. This is basically like
+the check against “parameterless searches” for queries without a geo
+component.</p>
+
+<p>A tag, for instance, is considered a limiting agent as are user defined
+min_date_taken and min_date_upload parameters — If no limiting factor is
+passed we return only photos added in the last 12 hours (though we may
+extend the limit in the future).</p>
+<dl class="rdoc-list label-list"><dt>lon 
+<dd>
+<p>A valid longitude, in decimal format, for doing radial geo queries.</p>
+</dd></dl>
+
+<p><a href="Photos/Geo.html">Geo</a> queries require some sort of limiting
+agent in order to prevent the database from crying. This is basically like
+the check against “parameterless searches” for queries without a geo
+component.</p>
+
+<p>A tag, for instance, is considered a limiting agent as are user defined
+min_date_taken and min_date_upload parameters — If no limiting factor is
+passed we return only photos added in the last 12 hours (though we may
+extend the limit in the future).</p>
+<dl class="rdoc-list label-list"><dt>radius 
+<dd>
+<p>A valid radius used for geo queries, greater than zero and less than 20
+miles (or 32 kilometers), for use with point-based geo queries. The default
+value is 5 (km).</p>
+</dd><dt>radius_units 
+<dd>
+<p>The unit of measure when doing radial geo queries. Valid options are “mi”
+(miles) and “km” (kilometers). The default is “km”.</p>
+</dd><dt>is_commons 
+<dd>
+<p>Limit the scope of the search to only photos that are part of the <a
+href="../Flickr.html">Flickr</a> <a href="Commons.html">Commons</a>
+project. Default is false.</p>
+</dd><dt>in_gallery 
+<dd>
+<p>Limit the scope of the search to only photos that are in a gallery? 
+Default is false, search all photos.</p>
+</dd><dt>person_id 
+<dd>
+<p>The id of a user.  Will return photos where the user has been people
+tagged.  A call signed as the person_id in question will return
+<strong>all</strong> photos the user in, otherwise returns public photos.</p>
+</dd><dt>is_getty 
+<dd>
+<p>Limit the scope of the search to only photos that are for sale on Getty.
+Default is false.</p>
+</dd><dt>username 
+<dd>
+<p>username/character name of the person whose photos you want to search.</p>
+</dd><dt>exif_min_exposure 
+<dt>exif_max_exposure 
+<dt>exif_min_aperture 
+<dt>exif_max_aperture 
+<dt>exif_min_focallen 
+<dt>exif_max_focallen 
+<dt>exclude_user_id 
+<dd>
+<p>NSId of the user to be excluded.</p>
+</dd><dt>extras 
+<dd>
+<p>A comma-delimited list of extra information to fetch for each returned
+record. Currently supported fields are: description, license, date_upload,
+date_taken, owner_name, icon_server, original_format, last_update, geo,
+tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s,
+url_q, url_m, url_n, url_z, url_c, url_l, url_o</p>
+</dd><dt>per_page 
+<dd>
+<p>Number of photos to return per page. If this argument is omitted, it
+defaults to 100. The maximum allowed value is 500.</p>
+</dd><dt>page 
+<dd>
+<p>The page of results to return. If this argument is omitted, it defaults to
+1.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Too many tags in ALL query</em></p>
+
+<p>When performing an &#39;all tags&#39; search, you may not specify more than
+20 tags to join together.</p>
+</li><li>
+<p>2: <em>Unknown user</em></p>
+
+<p>A user_id was passed which did not match a valid flickr user.</p>
+</li><li>
+<p>3: <em>Parameterless searches have been disabled</em></p>
+
+<p>To perform a search with no parameters (to get the latest public photos,
+please use flickr.photos.getRecent instead).</p>
+</li><li>
+<p>4: <em>You don&#39;t have permission to view this pool</em></p>
+
+<p>The logged in user (if any) does not have permission to view the pool for
+this group.</p>
+</li><li>
+<p>10: <em>Sorry, the <a href="../Flickr.html">Flickr</a> search API is not
+currently available.</em></p>
+
+<p>The <a href="../Flickr.html">Flickr</a> API search databases are
+temporarily unavailable.</p>
+</li><li>
+<p>11: <em>No valid machine tags</em></p>
+
+<p>The query styntax for the machine_tags argument did not validate.</p>
+</li><li>
+<p>12: <em>Exceeded maximum allowable machine tags</em></p>
+
+<p>The maximum number of machine tags in a single query was exceeded.</p>
+</li><li>
+<p>13: <em>jump_to not avaiable for this query</em></p>
+
+<p>jump_to only supported for some query types.</p>
+</li><li>
+<p>14: <em>Bad value for jump_to</em></p>
+
+<p>jump_to must be valid photo ID.</p>
+</li><li>
+<p>15: <em>Photo not found</em></p>
+</li><li>
+<p>16: <em>You can only search within your own favorites</em></p>
+</li><li>
+<p>17: <em>You can only search within your own contacts</em></p>
+
+<p>The call tried to use the contacts parameter with no user ID or a user ID
+other than that of the authenticated user.</p>
+</li><li>
+<p>18: <em>Illogical arguments</em></p>
+
+<p>The request contained contradictory arguments.</p>
+</li><li>
+<p>20: <em>Excessive photo offset in search</em></p>
+
+<p>The search requested photos beyond an allowable offset. Reduce the page
+number or number of results per page for this search.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="search-source">
+            <pre>
+# Generated automatically from flickr api
+  def search(*args)
+    @flickr.call &#39;flickr.photos.search&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-setContentType" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setContentType</span><span
+            class="method-args">(:photo_id => 'photo_id',:content_type => 'content_type')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.setContentType.html">flickr.photos.setContentType</a>
+request.</p>
+
+<p>Set the content type of a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to set the adultness of.</p>
+</dd><dt>content_type <em>(required)</em> 
+<dd>
+<p>The content type of the photo. Must be one of: 1 for Photo, 2 for
+Screenshot, and 3 for Other.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not a valid photo id of a photo belonging to the
+calling user.</p>
+</li><li>
+<p>2: <em>Required arguments missing</em></p>
+
+<p>Some or all of the required arguments were not supplied.</p>
+</li><li>
+<p>3: <em>Change not allowed</em></p>
+
+<p>Changing the content type of this photo is not allowed.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="setContentType-source">
+            <pre>
+# Generated automatically from flickr api
+  def setContentType(*args)
+    @flickr.call &#39;flickr.photos.setContentType&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-setDates" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setDates</span><span
+            class="method-args">(:photo_id => 'photo_id',:date_posted => 'date_posted',:date_taken => 'date_taken',:date_taken_granularity => 'date_taken_granularity')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.setDates.html">flickr.photos.setDates</a>
+request.</p>
+
+<p>Set one or both of the dates for a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to edit dates for.</p>
+</dd><dt>date_posted 
+<dd>
+<p>The date the photo was uploaded to flickr (see the dates documentation)</p>
+</dd><dt>date_taken 
+<dd>
+<p>The date the photo was taken (see the dates documentation)</p>
+</dd><dt>date_taken_granularity 
+<dd>
+<p>The granularity of the date the photo was taken (see the dates
+documentation)</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id was not the id of a valid photo belonging to the calling user.</p>
+</li><li>
+<p>2: <em>Not enough arguments</em></p>
+
+<p>No dates were specified to be changed.</p>
+</li><li>
+<p>3: <em>Invalid granularity</em></p>
+
+<p>The value passed for &#39;granularity&#39; was not a valid flickr date
+granularity.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="setDates-source">
+            <pre>
+# Generated automatically from flickr api
+  def setDates(*args)
+    @flickr.call &#39;flickr.photos.setDates&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-setMeta" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setMeta</span><span
+            class="method-args">(:photo_id => 'photo_id',:title => 'title',:description => 'description')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.setMeta.html">flickr.photos.setMeta</a>
+request.</p>
+
+<p>Set the meta information for a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to set information for.</p>
+</dd><dt>title <em>(required)</em> 
+<dd>
+<p>The title for the photo.</p>
+</dd><dt>description <em>(required)</em> 
+<dd>
+<p>The description for the photo.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not the id of a photo belonging to the calling
+user. It might be an invalid id, or the photo might be owned by another
+user.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="setMeta-source">
+            <pre>
+# Generated automatically from flickr api
+  def setMeta(*args)
+    @flickr.call &#39;flickr.photos.setMeta&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-setPerms" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setPerms</span><span
+            class="method-args">(:photo_id => 'photo_id',:is_public => 'is_public',:is_friend => 'is_friend',:is_family => 'is_family',:perm_comment => 'perm_comment',:perm_addmeta => 'perm_addmeta')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.setPerms.html">flickr.photos.setPerms</a>
+request.</p>
+
+<p>Set permissions for a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to set permissions for.</p>
+</dd><dt>is_public <em>(required)</em> 
+<dd>
+<p>1 to set the photo to public, 0 to set it to private.</p>
+</dd><dt>is_friend <em>(required)</em> 
+<dd>
+<p>1 to make the photo visible to friends when private, 0 to not.</p>
+</dd><dt>is_family <em>(required)</em> 
+<dd>
+<p>1 to make the photo visible to family when private, 0 to not.</p>
+</dd><dt>perm_comment <em>(required)</em> 
+<dd>
+<p>who can add comments to the photo and it&#39;s notes. one of:0: nobody1:
+friends &amp; family2: contacts3: everybody</p>
+</dd><dt>perm_addmeta <em>(required)</em> 
+<dd>
+<p>who can add notes and tags to the photo. one of:0: nobody / just the
+owner1: friends &amp; family2: contacts3: everybody</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not a valid photo id of a photo belonging to the
+calling user.</p>
+</li><li>
+<p>2: <em>Required arguments missing</em></p>
+
+<p>Some or all of the required arguments were not supplied.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+
+<pre>1234</pre>
+          
+          
+
+          
+          <div class="method-source-code" id="setPerms-source">
+            <pre>
+# Generated automatically from flickr api
+  def setPerms(*args)
+    @flickr.call &#39;flickr.photos.setPerms&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-setSafetyLevel" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setSafetyLevel</span><span
+            class="method-args">(:photo_id => 'photo_id',:safety_level => 'safety_level',:hidden => 'hidden')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.setSafetyLevel.html">flickr.photos.setSafetyLevel</a>
+request.</p>
+
+<p>Set the safety level of a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to set the adultness of.</p>
+</dd><dt>safety_level 
+<dd>
+<p>The safety level of the photo.  Must be one of:</p>
+</dd></dl>
+
+<p>1 for Safe, 2 for Moderate, and 3 for Restricted.</p>
+<dl class="rdoc-list label-list"><dt>hidden 
+<dd>
+<p>Whether or not to additionally hide the photo from public searches.  Must
+be either 1 for Yes or 0 for No.</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not a valid photo id of a photo belonging to the
+calling user.</p>
+</li><li>
+<p>2: <em>Invalid or missing arguments</em></p>
+
+<p>Neither a valid safety level nor a hidden value were passed.</p>
+</li><li>
+<p>3: <em>Change not allowed</em></p>
+
+<p>Changing the safety level of this photo is not allowed.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+
+<p><strong>Returns</strong></p>
+          
+          
+
+          
+          <div class="method-source-code" id="setSafetyLevel-source">
+            <pre>
+# Generated automatically from flickr api
+  def setSafetyLevel(*args)
+    @flickr.call &#39;flickr.photos.setSafetyLevel&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-setTags" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setTags</span><span
+            class="method-args">(:photo_id => 'photo_id',:tags => 'tags')</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p><a
+href="http://www.flickr.com/services/api/flickr.photos.setTags.html">flickr.photos.setTags</a>
+request.</p>
+
+<p>Set the tags for a photo.</p>
+
+<p><strong>Arguments</strong></p>
+<dl class="rdoc-list label-list"><dt>photo_id <em>(required)</em> 
+<dd>
+<p>The id of the photo to set tags for.</p>
+</dd><dt>tags <em>(required)</em> 
+<dd>
+<p>All tags for the photo (as a single space-delimited string).</p>
+</dd></dl>
+
+<p><strong>Error codes</strong></p>
+<ul><li>
+<p>1: <em>Photo not found</em></p>
+
+<p>The photo id passed was not the id of a photo belonging to the calling
+user. It might be an invalid id, or the photo might be owned by another
+user.</p>
+</li><li>
+<p>2: <em>Maximum number of tags reached</em></p>
+
+<p>The number of tags specified exceeds the limit for the photo. No tags were
+modified.</p>
+</li><li>
+<p>96: <em>Invalid signature</em></p>
+
+<p>The passed signature was invalid.</p>
+</li><li>
+<p>97: <em>Missing signature</em></p>
+
+<p>The call required signing but no signature was sent.</p>
+</li><li>
+<p>98: <em>Login failed / Invalid auth token</em></p>
+
+<p>The login details or auth token passed were invalid.</p>
+</li><li>
+<p>99: <em>User not logged in / Insufficient permissions</em></p>
+
+<p>The method requires user authentication but the user was not logged in, or
+the authenticated method call did not have the required permissions.</p>
+</li><li>
+<p>100: <em>Invalid API Key</em></p>
+
+<p>The API key passed was not valid or has expired.</p>
+</li><li>
+<p>105: <em>Service currently unavailable</em></p>
+
+<p>The requested service is temporarily unavailable.</p>
+</li><li>
+<p>106: <em>Write operation failed</em></p>
+
+<p>The requested operation failed due to a temporary issue.</p>
+</li><li>
+<p>111: <em>Format “xxx” not found</em></p>
+
+<p>The requested response format was not found.</p>
+</li><li>
+<p>112: <em>Method “xxx” not found</em></p>
+
+<p>The requested method was not found.</p>
+</li><li>
+<p>114: <em>Invalid SOAP envelope</em></p>
+
+<p>The SOAP envelope send in the request could not be parsed.</p>
+</li><li>
+<p>115: <em>Invalid XML-RPC Method Call</em></p>
+
+<p>The XML-RPC request document could not be parsed.</p>
+</li><li>
+<p>116: <em>Bad URL found</em></p>
+
+<p>One or more arguments contained a URL that has been used for abuse on <a
+href="../Flickr.html">Flickr</a>.</p>
+</li></ul>
+          
+          
+
+          
+          <div class="method-source-code" id="setTags-source">
+            <pre>
+# Generated automatically from flickr api
+  def setTags(*args)
+    @flickr.call &#39;flickr.photos.setTags&#39;, *args
+  end
+</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-suggestions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">suggestions</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/Suggestions.html">Suggestions</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-transform" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">transform</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/Transform.html">Transform</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-i-upload" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">upload</span><span
+            class="method-args">()</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns a <a href="Photos/Upload.html">Upload</a> object.</p>
+          
+          
+
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://rdoc.rubyforge.org">RDoc</a> 4.1.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
